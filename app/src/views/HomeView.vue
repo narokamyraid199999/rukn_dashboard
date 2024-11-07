@@ -1,5 +1,6 @@
 <script setup>
 import Box from "../components/Box.vue";
+import Statics from "../components/Statics.vue";
 import { ref } from "vue";
 
 let boxies = ref([
@@ -44,6 +45,11 @@ let boxies = ref([
         :data="elm"
         :isColor="elm.isColor"
       ></Box>
+    </div>
+
+    <!-- statics -->
+    <div>
+      <Statics></Statics>
     </div>
   </main>
 </template>
