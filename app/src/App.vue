@@ -9,9 +9,11 @@ import NavBar from "./components/NavBar.vue";
     <div>
       <SideBar></SideBar>
     </div>
-    <div class="w-full overflow-y-auto h-full max-h-screen min-h-screen">
+    <div
+      class="w-full bg-[#FCFCFC] overflow-y-auto h-full max-h-screen min-h-screen"
+    >
       <NavBar></NavBar>
-      <div class="bg-[#FCFCFC] px-12 rounded-lg">
+      <div class="px-12 rounded-lg">
         <RouterView></RouterView>
       </div>
     </div>

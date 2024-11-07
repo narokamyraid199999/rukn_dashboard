@@ -2,10 +2,9 @@
 
 <template>
   <main>
-    <div>
-      <p v-for="elm in [1, 2, 3, 4, 5, 6, 7, 9]" class="pt-60">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sequi.
-      </p>
+    <div class="pt-11">
+      <p class="text-[#13728F] font-bold text-2xl">الصفحة الرئيسية</p>
+      <p class="text-[#696969] mt-2 text-lg font-medium">إحصائيات الموظف</p>
     </div>
   </main>
 </template>
