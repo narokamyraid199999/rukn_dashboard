@@ -1,6 +1,5 @@
-
 <script setup></script>
 
 <template>
-    <p>test works</p>
+  <p>file manager</p>
 </template>

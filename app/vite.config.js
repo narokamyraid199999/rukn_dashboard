@@ -1,26 +1,17 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from "node:url";
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import proxyOptions from './proxyOptions';
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-  ],
+  plugins: [vue()],
   server: {
-		port: 8080,
-		proxy: proxyOptions
-	},
+    port: 8080,
+  },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-	build: {
-		outDir: '../rukn_dashboard/public/app',
-		emptyOutDir: true,
-		target: 'es2015',
-	},
-})
+});
