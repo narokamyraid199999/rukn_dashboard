@@ -1,6 +1,7 @@
 <script setup>
 import Box from "../components/Box.vue";
 import Statics from "../components/Statics.vue";
+import DashboardCharts from "../components/DashboardCharts.vue";
 import { ref } from "vue";
 
 let boxies = ref([
@@ -47,9 +48,10 @@ let boxies = ref([
       ></Box>
     </div>
 
-    <!-- statics -->
+    <!-- statics with charts -->
     <div>
       <Statics></Statics>
+      <DashboardCharts></DashboardCharts>
     </div>
   </main>
 </template>
