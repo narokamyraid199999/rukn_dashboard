@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="flex justify-between gap-x-4 items-center mt-14">
+  <div class="flex justify-between gap-x-4 items-center mt-10">
     <p class="text-sm md:text-lg lg:text-[1.6rem] font-bold text-[#13728F]">
       احصائيات
     </p>
