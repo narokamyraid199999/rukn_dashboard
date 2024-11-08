@@ -3,6 +3,20 @@ import { ref } from "vue";
 import logoURL from "../assets/logo.svg";
 
 const is_expanded = ref(localStorage.getItem("is_expanded") === "true");
+const hideExpande = ref(false);
+
+function updateFullSideBar(evt) {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    hideExpande.value = false;
+  }
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    is_expanded.value = false;
+    hideExpande.value = true;
+  }
+}
+
+window.addEventListener("resize", updateFullSideBar);
 
 const ToggleMenu = () => {
   is_expanded.value = !is_expanded.value;
@@ -122,7 +136,7 @@ const ToggleMenu = () => {
         </div>
       </div>
 
-      <div class="menu-toggle-wrap">
+      <div v-if="!hideExpande" class="menu-toggle-wrap">
         <button class="menu-toggle" @click="ToggleMenu">
           <span class="material-icons">keyboard_double_arrow_right</span>
         </button>
