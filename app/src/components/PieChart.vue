@@ -32,6 +32,10 @@ onMounted(() => {
           labels: {
             padding: 25,
             boxWidth: 15,
+            font: {
+              size: 18,
+              family: "Cairo",
+            },
           },
         },
       },
@@ -42,10 +46,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="p-5 overflow-auto max-w-full">
+  <div class="p-5 max-w-full">
     <p class="mb-10">الحضور والغياب</p>
     <div class="mx-auto w-[16rem]">
       <canvas id="myChart"></canvas>
     </div>
   </div>
 </template>
+
+<style scoped></style>

@@ -4,6 +4,8 @@ import Chart from "chart.js/auto";
 import { getRelativePosition } from "chart.js/helpers";
 
 onMounted(() => {
+  Chart.defaults.font.size = 16;
+  Chart.defaults.font.family = "Cairo";
   const ctx = document.getElementById("waveChart");
   const data = {
     labels: ["Red", "Blue", "Yellow"],
@@ -28,11 +30,27 @@ onMounted(() => {
   new Chart(ctx, {
     type: "line",
     data: {
-      labels: ["January", "February", "March", "April", "May"],
+      labels: [
+        "ديسمبر",
+        "نوفمبر",
+        "أكتوبر",
+        "سبتمبر",
+        "أغسطس",
+        "يوليو",
+        "يونيو",
+        "مايو",
+        "ابريل",
+        "مارس",
+        "فبراير",
+        "يناير",
+      ],
       datasets: [
         {
-          label: "Page Views",
-          data: [5000, 7500, 8000, 6000, 9000],
+          label: "أحصائيات",
+          data: [
+            82000, 60000, 60000, 71000, 71000, 88000, 62000, 25000, 39990,
+            17000, 45000, 37000, 78000,
+          ],
           backgroundColor: "rgba(75, 192, 192, 0.5)",
           borderColor: "rgba(75, 192, 192, 1)",
           borderWidth: 2,
@@ -41,9 +59,19 @@ onMounted(() => {
       ],
     },
     options: {
+      plugins: {
+        legend: {
+          labels: {
+            // This more specific font property overrides the global property
+            font: {
+              size: 16,
+            },
+          },
+        },
+      },
       scales: {
         y: {
-          beginAtZero: false,
+          beginAtZero: true,
         },
       },
     },
@@ -52,9 +80,25 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full h-full">
-    <div class="w-[50rem]">
+  <div class="w-full overflow-auto p-5 chart-scrool">
+    <div class="mx-auto w-[50rem]">
       <canvas id="waveChart"></canvas>
     </div>
   </div>
 </template>
+
+<style scoped>
+.chart-scrool::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2e2e3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cd3535;
+}
+</style>
