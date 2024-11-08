@@ -14,9 +14,9 @@ const router = createRouter({
       component: import("../components/FileManager.vue"),
     },
     {
-      path: "/projects",
-      name: "projects",
-      component: import("../components/Projects.vue"),
+      path: "/staff",
+      name: "staff",
+      component: import("../components/Staff.vue"),
     },
     {
       path: "/jobs",

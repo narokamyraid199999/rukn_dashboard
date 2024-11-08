@@ -151,7 +151,7 @@ const ToggleMenu = () => {
       <div class="menu">
         <router-link to="/" class="button py-5 shadow-sm">
           <span :class="{ 'material-icons': true, 'pr-6': !is_expanded }"
-            >home</span
+            >speed</span
           >
           <span class="text">لوحة التحكم</span>
         </router-link>
@@ -163,12 +163,12 @@ const ToggleMenu = () => {
           }"
         >
           <span :class="{ 'material-icons': true, 'pr-6': !is_expanded }"
-            >description</span
+            >business_center</span
           >
-          <span class="text">مدير الملفات</span>
+          <span class="text">الموارد البشرية</span>
         </router-link>
         <router-link
-          to="/projects"
+          to="/staff"
           :class="{
             'button py-4 shadow-sm mt-4': true,
             'bg-[#F9F9F9]': is_expanded,
@@ -177,7 +177,7 @@ const ToggleMenu = () => {
           <span :class="{ 'material-icons': true, 'pr-6': !is_expanded }"
             >group</span
           >
-          <span class="text">المشاريع</span>
+          <span class="text">الموظفون</span>
         </router-link>
         <router-link
           to="/jobs"
@@ -259,7 +259,7 @@ aside {
       padding: 0.9rem 1rem;
 
       .material-icons {
-        font-size: 1.55rem;
+        font-size: 1.5rem;
         color: #696969;
         /* transition: 0.2s ease-in-out; */
       }

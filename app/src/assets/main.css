@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: #e84646;
+  color: white;
+}
+
 :root {
   --lightred: #e84646;
   --meduimred: #e84646;
