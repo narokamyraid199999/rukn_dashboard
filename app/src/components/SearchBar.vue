@@ -4,7 +4,7 @@
   <div class="shadow-sm h-14 hidden md:flex">
     <input
       type="text"
-      class="bg-[#F9F9F9] pr-4 h-full rounded-r-lg outline-none w-[10rem] overflow-auto pl-2 text-sm xl:text-base lg:w-[13rem] xl:w-[25rem]"
+      class="bg-[#F9F9F9] pr-4 h-full rounded-r-lg outline-none w-[10rem] lg:w-[20rem] xl:w-[25rem] overflow-auto pl-2 text-sm xl:text-base"
       placeholder="ابحث هنا ..."
     />
     <button
