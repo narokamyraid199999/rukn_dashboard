@@ -35,8 +35,12 @@ let boxies = ref([
 <template>
   <main>
     <div class="pt-11">
-      <p class="text-[#13728F] font-bold text-[1.7rem]">الصفحة الرئيسية</p>
-      <p class="text-[#696969] mt-1 text-lg font-medium">إحصائيات الموظف</p>
+      <p class="text-[#13728F] font-bold text-lg lg:text-[1.7rem]">
+        الصفحة الرئيسية
+      </p>
+      <p class="text-[#696969] mt-1 text-sm lg:text-lg font-medium">
+        إحصائيات الموظف
+      </p>
     </div>
 
     <div

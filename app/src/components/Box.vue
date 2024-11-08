@@ -49,12 +49,17 @@ const { data, isColor } = defineProps(["data", "isColor"]);
       <p class="text-lg">8%+</p>
     </div>
     <div>
-      <p :class="{ 'text-[1.3rem]': true, 'text-[#13728F]': !isColor }">
+      <p
+        :class="{
+          'text-base lg:text-[1.3rem]': true,
+          'text-[#13728F]': !isColor,
+        }"
+      >
         {{ data.text }}
       </p>
       <div :class="{ 'text-[#696969]': !isColor }">
-        <p class="mt-3 text-3xl font-meduim">{{ data.number }}</p>
-        <p class="text-[1.3rem]">{{ data.type }}</p>
+        <p class="mt-3 text-base lg:text-3xl font-meduim">{{ data.number }}</p>
+        <p class="text-base lg:text-[1.3rem]">{{ data.type }}</p>
       </div>
     </div>
   </div>

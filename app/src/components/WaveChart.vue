@@ -25,13 +25,35 @@ onMounted(() => {
     type: "doughnut",
     data: data,
   };
-  new Chart(ctx, config);
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["January", "February", "March", "April", "May"],
+      datasets: [
+        {
+          label: "Page Views",
+          data: [5000, 7500, 8000, 6000, 9000],
+          backgroundColor: "rgba(75, 192, 192, 0.5)",
+          borderColor: "rgba(75, 192, 192, 1)",
+          borderWidth: 2,
+          fill: "start",
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: false,
+        },
+      },
+    },
+  });
 });
 </script>
 
 <template>
-  <div class="max-h-[30rem]">
-    <div class="w-[25rem]">
+  <div class="w-full h-full">
+    <div class="w-[50rem]">
       <canvas id="waveChart"></canvas>
     </div>
   </div>

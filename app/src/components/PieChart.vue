@@ -42,7 +42,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="p-5">
+  <div class="p-5 overflow-auto max-w-full">
     <p class="mb-10">الحضور والغياب</p>
     <div class="mx-auto w-[16rem]">
       <canvas id="myChart"></canvas>
