@@ -56,5 +56,6 @@
 
 .icon-shadow {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+  color: #696969;
 }
 </style>
