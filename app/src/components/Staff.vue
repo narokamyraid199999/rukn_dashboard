@@ -1,6 +1,7 @@
 <script setup>
 import StaffTitle from "./StaffTitle.vue";
 import StaffTaps from "./StaffTaps.vue";
+import StaffForm from "./StaffForm.vue";
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import StaffTaps from "./StaffTaps.vue";
     <StaffTitle></StaffTitle>
     <div class="bg-white rounded-2xl pb-[30rem] panel-shadow mt-8 p-6">
       <StaffTaps></StaffTaps>
+      <StaffForm></StaffForm>
     </div>
   </div>
 </template>
