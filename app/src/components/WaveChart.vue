@@ -81,7 +81,7 @@ onMounted(() => {
 
 <template>
   <div class="w-full overflow-auto p-5 chart-scrool">
-    <div class="mx-auto w-[50rem]">
+    <div class="mx-auto w-[55rem]">
       <canvas id="waveChart"></canvas>
     </div>
   </div>
