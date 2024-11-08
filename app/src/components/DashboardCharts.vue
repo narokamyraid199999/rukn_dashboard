@@ -4,8 +4,8 @@ import WaveChart from "./WaveChart.vue";
 </script>
 
 <template>
-  <div class="grid grid-cols-3 gap-x-12 justify-between mt-8">
-    <div class="col-span-2">
+  <div class="flex gap-x-8 justify-between mt-8 flex-wrap gap-y-8">
+    <div class="flex-auto">
       <div class="bg-white w-full shadow-sm rounded-xl p-20">
         <WaveChart></WaveChart>
       </div>
