@@ -39,17 +39,14 @@ let boxies = ref([
       <p class="text-[#696969] mt-1 text-lg font-medium">إحصائيات الموظف</p>
     </div>
 
-    <div class="mt-7 flex gap-x-6">
-      <Box
-        v-for="elm in boxies"
-        class="flex-1"
-        :data="elm"
-        :isColor="elm.isColor"
-      ></Box>
+    <div
+      class="mt-7 grid gap-x-6 gap-y-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-4"
+    >
+      <Box v-for="elm in boxies" :data="elm" :isColor="elm.isColor"></Box>
     </div>
 
     <!-- statics with charts -->
-    <div>
+    <div class="mb-40">
       <Statics></Statics>
       <DashboardCharts></DashboardCharts>
     </div>

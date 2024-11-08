@@ -1,14 +1,14 @@
 <script setup></script>
 
 <template>
-  <div class="shadow-sm h-14 flex">
+  <div class="shadow-sm h-14 hidden md:flex">
     <input
       type="text"
-      class="bg-[#F9F9F9] pr-4 h-full rounded-r-lg outline-none w-[25rem]"
+      class="bg-[#F9F9F9] pr-4 h-full rounded-r-lg outline-none w-[10rem] overflow-auto pl-2 text-sm xl:text-base lg:w-[13rem] xl:w-[25rem]"
       placeholder="ابحث هنا ..."
     />
     <button
-      class="bg-[#e84646] h-full text-white w-16 rounded-l-lg flex items-center justify-center outline-none"
+      class="bg-[#e84646] h-full text-white w-12 lg:w-16 rounded-l-lg flex items-center justify-center outline-none"
     >
       <svg
         width="24"

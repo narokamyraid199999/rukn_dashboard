@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex justify-between mt-14">
-    <p class="text-3xl font-bold text-[#13728F]">احصائيات</p>
+    <p class="text-[1.6rem] font-bold text-[#13728F]">احصائيات</p>
     <button
       class="items-center flex gap-x-4 bg-[#28B870] text-white rounded-lg px-5 py-3.5 text-lg outline-none"
     >

@@ -50,7 +50,7 @@
         />
       </button>
 
-      <div class="">
+      <div class="text-sm lg:text-base">
         <p>أمل محمد</p>
         <p class="text-sm text-gray-600">الإدارة</p>
       </div>

@@ -5,7 +5,7 @@ import UserProfile from "./UserProfile.vue";
 
 <template>
   <nav
-    class="w-full py-7 pr-12 pl-24 flex items-center justify-between bg-white"
+    class="w-full py-7 pr-12 xl:pl-24 pl-8 flex gap-x-8 items-center justify-between bg-white"
   >
     <SearchBar></SearchBar>
     <UserProfile></UserProfile>
