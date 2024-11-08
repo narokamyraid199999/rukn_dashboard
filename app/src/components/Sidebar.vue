@@ -136,6 +136,12 @@ const ToggleMenu = () => {
         </div>
       </div>
 
+      <div v-if="hideExpande" class="my-10 pr-5" title="أبحث ...">
+        <button class="bg-[#da3d3d] text-white text-lg w-8 rounded-full">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
+
       <div v-if="!hideExpande" class="menu-toggle-wrap">
         <button class="menu-toggle" @click="ToggleMenu">
           <span class="material-icons">keyboard_double_arrow_right</span>
