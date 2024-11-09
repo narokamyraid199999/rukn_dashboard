@@ -10,7 +10,7 @@ import NavBar from "./components/NavBar.vue";
       <SideBar></SideBar>
     </div>
     <div
-      class="w-full bg-[#FCFCFC] overflow-y-auto h-full max-h-screen min-h-screen"
+      class="w-full bg-[#FCFCFC] overflow-auto h-full max-h-screen min-h-screen"
     >
       <NavBar></NavBar>
       <div class="px-12 rounded-lg">

@@ -4,13 +4,21 @@ import StaffTaps from "./StaffTaps.vue";
 import StaffForm from "./StaffForm.vue";
 import StaffUserDetails from "./StaffUserDetails.vue";
 import StaffCompanyDetails from "./StaffCompanyDetails.vue";
-
+import StaffTimeline from "./StaffTimeline.vue";
+import Swal from "sweetalert2";
 import { ref } from "vue";
 
 let userComment = ref("");
 
 const SendUserComment = () => {
-  console.log(userComment.value);
+  Swal.fire({
+    icon: "error",
+    title: "خطأ!",
+    showDenyButton: true,
+    showConfirmButton: false,
+    denyButtonText: `موافق`,
+    text: "لم يتم برمجة هذه الخاصية بعد",
+  });
 };
 </script>
 
@@ -26,9 +34,7 @@ const SendUserComment = () => {
     </div>
 
     <!-- comment -->
-    <div
-      class="bg-white rounded-2xl panel-shadow mb-20 mt-8 p-6 text-[#696969]"
-    >
+    <div class="bg-white rounded-2xl panel-shadow mb-5 mt-8 p-6 text-[#696969]">
       <p class="text-[1.7rem] mb-3">أضف تعليقًا</p>
       <textarea
         v-model="userComment"
@@ -37,7 +43,7 @@ const SendUserComment = () => {
         name="userComment"
         placeholder="أدخل تعليق..."
         type="text"
-        class="bg-[#F9F9F9] resize-none pr-4 rounded-2xl outline-none w-full overflow-auto pt-4 pl-2 text-sm xl:text-base text-[#9B9B9B]"
+        class="bg-[#F9F9F9] resize-none pr-4 rounded-2xl outline-none w-full pt-4 pl-2 text-sm xl:text-base text-[#9B9B9B]"
       ></textarea>
       <button
         @click="SendUserComment"
@@ -46,6 +52,8 @@ const SendUserComment = () => {
         تعليق
       </button>
     </div>
+
+    <StaffTimeline></StaffTimeline>
   </div>
 </template>
 

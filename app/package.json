@@ -10,10 +10,15 @@
     "copy-html-entry": "cp ../rukn_dashboard/public/app/index.html ../rukn_dashboard/www/app.html"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.1",
     "app": "file:",
     "chart.js": "^4.4.6",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.1",
+    "tailwindcss-primeui": "^0.3.4",
     "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "vue-sweetalert2": "^5.0.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
