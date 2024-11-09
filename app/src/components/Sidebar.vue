@@ -149,7 +149,13 @@ const ToggleMenu = () => {
       </div>
 
       <div class="menu">
-        <router-link to="/" class="button py-5 shadow-sm">
+        <router-link
+          to="/"
+          :class="{
+            'button py-5 shadow-sm': true,
+            'bg-[#F9F9F9]': is_expanded,
+          }"
+        >
           <span :class="{ 'material-icons': true, 'pr-6': !is_expanded }"
             >speed</span
           >
