@@ -10,7 +10,7 @@ const { title, isDropdown, data, required, placeholder } = defineProps([
 
 <template>
   <div>
-    <p class="text-[1.18rem] mb-2 text-[#696969]">
+    <p class="text-[1.15rem] mb-2 text-[#696969]">
       {{ title }} <span v-if="required" class="text-[#da3d3d]">*</span>
     </p>
     <input

@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const create = () => {
+  // add some logic
+};
+</script>
 
 <template>
   <div class="flex justify-between gap-x-4 items-center mt-10">
@@ -6,6 +10,7 @@
       احصائيات
     </p>
     <button
+      @click="create"
       class="items-center flex md:gap-x-4 bg-[#28B870] text-white rounded-lg px-2 md:px-5 py-3.5 text-sm lg:text-lg outline-none"
     >
       <span>

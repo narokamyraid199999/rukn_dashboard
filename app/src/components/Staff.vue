@@ -3,6 +3,7 @@ import StaffTitle from "./StaffTitle.vue";
 import StaffTaps from "./StaffTaps.vue";
 import StaffForm from "./StaffForm.vue";
 import StaffUserDetails from "./StaffUserDetails.vue";
+import StaffCompanyDetails from "./StaffCompanyDetails.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import StaffUserDetails from "./StaffUserDetails.vue";
       <StaffTaps></StaffTaps>
       <StaffForm></StaffForm>
       <StaffUserDetails></StaffUserDetails>
+      <StaffCompanyDetails></StaffCompanyDetails>
     </div>
   </div>
 </template>

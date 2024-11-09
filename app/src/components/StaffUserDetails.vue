@@ -11,6 +11,10 @@ const toggle = () => {
       ? "keyboard_arrow_up"
       : "keyboard_arrow_down";
 };
+
+const createNewUser = () => {
+  // you can create a new user
+};
 </script>
 
 <template>
@@ -34,6 +38,7 @@ const toggle = () => {
         لجميع نماذج الموارد البشرية.
       </p>
       <button
+        @click="createNewUser"
         class="bg-[#E84646] text-[#FFFFFF] py-2 px-6 mt-4 rounded-lg text-lg outline-none"
       >
         إنشاء مستخدم
