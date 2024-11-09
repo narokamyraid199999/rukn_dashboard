@@ -2,6 +2,7 @@
 import StaffTitle from "./StaffTitle.vue";
 import StaffTaps from "./StaffTaps.vue";
 import StaffForm from "./StaffForm.vue";
+import StaffUserDetails from "./StaffUserDetails.vue";
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import StaffForm from "./StaffForm.vue";
     <div class="bg-white rounded-2xl pb-[30rem] panel-shadow mt-8 p-6">
       <StaffTaps></StaffTaps>
       <StaffForm></StaffForm>
+      <StaffUserDetails></StaffUserDetails>
     </div>
   </div>
 </template>
