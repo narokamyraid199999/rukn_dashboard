@@ -21,20 +21,6 @@
       </div>
     </div>
 
-    <div class="hidden">
-      <div class="dropdown">
-        <button class="bg-red-600 text-white py-3 px-4 rounded-md">
-          <span class="material-icons">menu</span>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">حفظ</a>
-          <a href="#">رجوع</a>
-          <a href="#">رفع</a>
-          <a href="#">اعدادات</a>
-        </div>
-      </div>
-    </div>
-
     <div class="flex items-center icons-gap gap-x-3">
       <button
         class="bg-[#28B870] text-[#FFFFFF] text-xs lg:text-base py-2 px-5 flex justify-center items-center outline-none rounded-lg"
@@ -73,40 +59,6 @@
 .icon-shadow {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
   color: #696969;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  left: 2px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
 }
 
 @media screen and (max-width: 993px) {
