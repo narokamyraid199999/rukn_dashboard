@@ -13,7 +13,7 @@ import NavBar from "./components/NavBar.vue";
       class="w-full bg-[#FCFCFC] overflow-auto h-full max-h-screen min-h-screen"
     >
       <NavBar></NavBar>
-      <div class="px-12 rounded-lg">
+      <div class="px-7 lg:px-12 rounded-lg">
         <RouterView></RouterView>
       </div>
     </div>

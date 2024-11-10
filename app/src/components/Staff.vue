@@ -23,7 +23,7 @@ const SendUserComment = () => {
 </script>
 
 <template>
-  <div class="pt-6 pb-6 pl-6">
+  <div class="pt-6 pb-6 pl-0 lg:pl-6">
     <!-- staff form -->
     <StaffTitle></StaffTitle>
     <div class="bg-white rounded-2xl panel-shadow mt-8 p-6">
@@ -35,7 +35,7 @@ const SendUserComment = () => {
 
     <!-- comment -->
     <div class="bg-white rounded-2xl panel-shadow mb-5 mt-8 p-6 text-[#696969]">
-      <p class="text-[1.7rem] mb-3">أضف تعليقًا</p>
+      <p class="text-sm lg:text-[1.7rem] mb-3">أضف تعليقًا</p>
       <textarea
         v-model="userComment"
         rows="10"
@@ -47,7 +47,7 @@ const SendUserComment = () => {
       ></textarea>
       <button
         @click="SendUserComment"
-        class="bg-[#E84646] text-[#FFFFFF] py-2 px-12 mt-4 rounded-lg text-lg outline-none"
+        class="bg-[#E84646] text-[#FFFFFF] py-2 px-12 mt-4 rounded-lg text-sm lg:text-lg outline-none"
       >
         تعليق
       </button>

@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import FormButton from "./FormButton.vue";
+import Swal from "sweetalert2";
+
 const isVisible = ref(false);
 const arrow = ref("keyboard_arrow_up");
 
@@ -13,7 +15,14 @@ const toggle = () => {
 };
 
 const createNewUser = () => {
-  // you can create a new user
+  Swal.fire({
+    icon: "error",
+    title: "خطأ!",
+    showDenyButton: true,
+    showConfirmButton: false,
+    denyButtonText: `موافق`,
+    text: "لم يتم برمجة هذه الخاصية بعد",
+  });
 };
 </script>
 
@@ -25,7 +34,7 @@ const createNewUser = () => {
     </button>
     <div class="mt-3" v-if="isVisible">
       <!-- <p>معرف المستخدم</p> -->
-      <div class="grid grid-cols-3 mt-5 gap-x-14">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-5 xl:gap-x-14 mt-5">
         <FormButton
           class="col-span-1"
           title="معرف المستخدم"
@@ -39,7 +48,7 @@ const createNewUser = () => {
       </p>
       <button
         @click="createNewUser"
-        class="bg-[#E84646] text-[#FFFFFF] py-2 px-6 mt-4 rounded-lg text-lg outline-none"
+        class="bg-[#E84646] text-[#FFFFFF] py-2 px-6 mt-4 rounded-lg text-sm lg:text-lg outline-none"
       >
         إنشاء مستخدم
       </button>

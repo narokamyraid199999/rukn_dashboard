@@ -56,7 +56,7 @@ const formInputs = ref([
 
 <template>
   <div class="mt-6">
-    <div class="grid grid-cols-3 gap-x-14 gap-y-5">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-5 xl:gap-x-14 gap-y-5">
       <FormButton
         v-for="input in formInputs"
         :required="input.required"
@@ -65,7 +65,7 @@ const formInputs = ref([
         :isDropdown="input.isDropdown"
       ></FormButton>
     </div>
-    <div class="grid grid-cols-3 mt-5 gap-x-14">
+    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-14 mt-5">
       <FormButton
         class="col-span-1"
         title="الاسم الكامل"

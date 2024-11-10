@@ -45,7 +45,7 @@ const formInputs = ref([
 <template>
   <div class="mt-9 text-[#696969]">
     <p class="text-[1.3rem] mb-2">تفاصيل الشركة</p>
-    <div class="grid grid-cols-3 gap-x-14 gap-y-5">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-5 xl:gap-x-14 gap-y-5">
       <FormButton
         v-for="input in formInputs"
         :required="input.required"
