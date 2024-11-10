@@ -1,6 +1,15 @@
 <script setup>
+import Swal from "sweetalert2";
+
 const create = () => {
-  // add some logic
+  Swal.fire({
+    icon: "error",
+    title: "خطأ!",
+    showDenyButton: true,
+    showConfirmButton: false,
+    denyButtonText: `موافق`,
+    text: "لم يتم برمجة هذه الخاصية بعد",
+  });
 };
 </script>
 
