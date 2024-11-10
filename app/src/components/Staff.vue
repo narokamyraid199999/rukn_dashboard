@@ -35,7 +35,7 @@ const SendUserComment = () => {
 
     <!-- comment -->
     <div class="bg-white rounded-2xl panel-shadow mb-5 mt-8 p-6 text-[#696969]">
-      <p class="text-sm lg:text-[1.7rem] mb-3">أضف تعليقًا</p>
+      <p class="text-sm lg:text-[1.7rem] mb-6">أضف تعليقًا</p>
       <textarea
         v-model="userComment"
         rows="10"

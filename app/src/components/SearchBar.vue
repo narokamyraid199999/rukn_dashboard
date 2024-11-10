@@ -1,13 +1,31 @@
-<script setup></script>
+<script setup>
+import Swal from "sweetalert2";
+import { ref } from "vue";
+
+let searchValue = ref("");
+
+const Search = () => {
+  Swal.fire({
+    icon: "error",
+    title: "خطأ!",
+    showDenyButton: true,
+    showConfirmButton: false,
+    denyButtonText: `موافق`,
+    text: "لم يتم برمجة هذه الخاصية بعد",
+  });
+};
+</script>
 
 <template>
   <div class="shadow-sm h-14 hidden md:flex">
     <input
+      v-model="searchValue"
       type="text"
       class="bg-[#F9F9F9] pr-4 h-full rounded-r-lg outline-none w-[10rem] lg:w-[20rem] xl:w-[25rem] overflow-auto pl-2 text-sm xl:text-base"
       placeholder="ابحث هنا ..."
     />
     <button
+      @click="Search"
       class="bg-[#e84646] h-full text-white w-12 lg:w-16 rounded-l-lg flex items-center justify-center outline-none"
     >
       <svg
