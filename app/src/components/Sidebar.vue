@@ -174,7 +174,7 @@ const ToggleMenu = () => {
           <span class="text">الموارد البشرية</span>
         </router-link>
         <router-link
-          to="/staff"
+          to="/staff/general"
           :class="{
             'button py-4 shadow-sm mt-4': true,
             'bg-[#F9F9F9]': is_expanded,

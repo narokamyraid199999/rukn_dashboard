@@ -65,7 +65,7 @@
 
         <div class="text-base font-normal relative -top-1">
           <div
-            class="bg-white flex text-sm lg:text-base justify-between rounded-xl w-full md:w-2/3 xl:w-1/3 pt-2 pb-5 px-4 shadow-sm"
+            class="bg-white gap-x-4 flex text-sm lg:text-base justify-between rounded-xl w-full md:w-2/3 xl:w-1/3 pt-2 pb-5 px-4 shadow-sm"
           >
             <div>
               <p>

@@ -1,24 +1,24 @@
 <script setup>
-import FormButton from "./FormButton.vue";
+import FormButton from "../FormButton.vue";
 import { ref } from "vue";
 
 const formInputs = ref([
   {
-    title: "الاسم الاول",
+    title: "الانضمام",
     required: true,
-    placeholder: "الرجاء إدخال الاسم الأول",
-    isDropdown: false,
-  },
-  {
-    title: "جنس",
-    required: true,
-    placeholder: "الرجاء إدخال الجنس",
+    placeholder: "الرجاء إدخال الانضمام",
     isDropdown: false,
   },
   {
     title: "تاريخ الانضمام",
     required: true,
-    placeholder: "الرجاء إدخال التاريخ",
+    placeholder: "الرجاء تاريخ الانضمام",
+    isDropdown: false,
+  },
+  {
+    title: "الراتب",
+    required: true,
+    placeholder: "الرجاء إدخال الراتب",
     isDropdown: false,
   },
   {
@@ -28,27 +28,27 @@ const formInputs = ref([
     isDropdown: false,
   },
   {
-    title: "تاريخ الميلاد",
+    title: "تاريخ القبض",
     required: true,
-    placeholder: "الرجاء إدخال تاريخ الميلاد",
+    placeholder: "الرجاء إدخال تاريخ القبض",
     isDropdown: false,
   },
   {
-    title: "حالة",
+    title: "حالة الراتب",
     required: true,
-    placeholder: "الرجاء تحديد أ الحالة",
+    placeholder: "الرجاء تحديد حالة الراتب",
     isDropdown: true,
   },
   {
-    title: "اسم العائلة",
+    title: "اسم المشرف",
     required: false,
-    placeholder: "الرجاء إدخال الاسم الأخير",
+    placeholder: "الرجاء إدخال اسم المشرف",
     isDropdown: false,
   },
   {
-    title: "التحية",
+    title: "اللقب",
     required: false,
-    placeholder: "الرجاء إدخال التحية",
+    placeholder: "الرجاء إدخال اللقب",
     isDropdown: false,
   },
 ]);

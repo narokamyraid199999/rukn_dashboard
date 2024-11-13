@@ -1,7 +1,6 @@
 <script setup>
 import StaffTitle from "./StaffTitle.vue";
 import StaffTaps from "./StaffTaps.vue";
-import StaffForm from "./StaffForm.vue";
 import StaffUserDetails from "./StaffUserDetails.vue";
 import StaffCompanyDetails from "./StaffCompanyDetails.vue";
 import StaffTimeline from "./StaffTimeline.vue";
@@ -28,7 +27,7 @@ const SendUserComment = () => {
     <StaffTitle></StaffTitle>
     <div class="bg-white rounded-2xl panel-shadow mt-8 p-6">
       <StaffTaps></StaffTaps>
-      <StaffForm></StaffForm>
+      <RouterView></RouterView>
       <StaffUserDetails></StaffUserDetails>
       <StaffCompanyDetails></StaffCompanyDetails>
     </div>

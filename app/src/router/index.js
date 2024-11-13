@@ -16,6 +16,45 @@ const router = createRouter({
     {
       path: "/staff",
       name: "staff",
+      children: [
+        {
+          path: "general",
+          name: "general",
+          component: import("../components/StaffTabs/StaffGeneralTab.vue"),
+        },
+        {
+          path: "join",
+          name: "joinTab",
+          component: import("../components/StaffTabs/StaffJoinTab.vue"),
+        },
+        {
+          path: "info",
+          name: "info",
+          component: import("../components/StaffTabs/StaffInfoTab.vue"),
+        },
+        {
+          path: "details",
+          name: "details",
+          component: import("../components/StaffTabs/StaffDetailsTab.vue"),
+        },
+        {
+          path: "salary",
+          name: "salary",
+          component: import("../components/StaffTabs/StaffSalaryTab.vue"),
+        },
+        {
+          path: "personal",
+          name: "personal",
+          component: import("../components/StaffTabs/StaffPersonalInfoTab.vue"),
+        },
+        {
+          path: "profile",
+          name: "profile",
+          component: import(
+            "../components/StaffTabs/StaffPersonalProfileTab.vue"
+          ),
+        },
+      ],
       component: import("../components/Staff.vue"),
     },
     {
